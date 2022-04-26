@@ -1,8 +1,17 @@
 body { /* Customization for the backround of the document */
     text-align: center;
     margin: 0 auto;
-    background-color: #32e0c3b9;
+    background-color: #ffffffb9;
     background-image: linear-gradient(color, color);
+}
+
+img { /* Customization for all images without a specific class */
+    max-width: 50vw; /* sets the max with of an image */
+    text-align: center; /* Tells the image where it's meant to be */
+    margin: 0 auto;
+    width: 30vw; /* the images width */
+    height: 20vw; /* the images height */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 { /* settings for the firs header of the document */
@@ -21,15 +30,7 @@ p {
     text-align: left;
     font-size: 20px;
     max-width: 30vw;
-    
-}
-
-img { /* Customization for all images without a specific class */
-    max-width: 50vw; /* sets the max with of an image */
-    text-align: center; /* Tells the image where it's meant to be */
-    margin: 0 auto;
-    width: 30vw; /* the images width */
-    height: 20vw; /* the images height */
+    text-shadow: 2px 2px 4px #000000;
 }
 
 a:link {
@@ -69,10 +70,23 @@ a:active {
     margin: 1em auto;
     text-align: left;
     list-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.list-text-color {
+.list-text-customization {
     color:black;
     font-weight: bold;
     font-style: italic;
+    margin: 4px;
+}
+
+.button-customization {
+background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

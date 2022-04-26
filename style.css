@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body { /* Customization for the backround of the document */
     text-align: center;
     margin: 0 auto;
@@ -33,6 +34,8 @@ img { /* Customization for all images without a specific class */
     height: 20vw; /* the images height */
 }
 
+=======
+>>>>>>> parent of 4b299bb (1231)
 a:link {
     color:blue
 }

@@ -38,7 +38,7 @@ b {
     color: white;
 }
 
-a:link {
+a:link { 
     color:blue
 }
 
@@ -62,22 +62,38 @@ a:active {
 /* ===== ===== Page Overlay ===== ===== */
 /* ===== ===== ============ ===== ===== */
 
-.page-overlay {
+.page-overlay { /* A default background overlay */
     padding-top: 3px;
     padding-bottom: 10px;
     color: rgb(255, 255, 255);
     max-width: 60vw;
     margin: 0 auto;
     background-color: #5b6677;
-    min-height: calc(100vh - 65px);
 }
 
-.page-overlay-ARVR {
+.page-overlay-footer { /* A background overlay for the footers*/
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding-top: 2vw;
+    background-color: #5b6677;
+}
+
+.page-overlay-ARVR { /* A background overlay for ARVR.html */
     padding-top: 3px;
     padding-bottom: 10px;
     color: rgb(255, 255, 255);
     background-color: #5b6677;
-    min-height: calc(100vh - 65px);
+}
+
+.page-overlay-h2 { /* Used for a spectial h2 on computer&tech */
+    color: rgb(255, 255, 255);
+    background-color: #5b6677;  
+    margin: 0 auto;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    max-width: 20vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 /* ===== ===== ==================== ===== ===== */
@@ -119,9 +135,17 @@ a:active {
     display: inline-block;
     font-size: 16px;
 }
+
 /* Texts */
 .source-links {
     margin: 0 auto;
+    text-align: center;
+    min-width: 10vw;
+}
+
+.computer-related-tech-grid > header { /* Makes a "fake" header for me to use, ie a default header if for whatever rteoson I can't or shouldn't use h1, h2 ect*/
+    text-decoration: solid;
+    font-size: large;
     text-align: center;
 }
 
@@ -139,52 +163,37 @@ a:active {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.computer-related-tech-grid > img {
+    margin-top: 2vh;
+    width: 500px; 
+    height: 29px;
+}
+
 /* ===== ===== ===== ===== ===== */
 /* ===== ===== grids ===== ===== */
 /* ===== ===== ===== ===== ===== */
 
-.arvr-grid {
+.arvr-grid { 
     display: grid;
-    grid-template-columns: 0.4fr 0.20fr 1fr 0.20fr 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 0.4fr 1fr 1fr;
+    grid-column-gap: 8vw;
 }
     
-    .arvr-div1 { 
+    .arvr-grid > div { 
         padding-top: 3px;
         padding-bottom: 10px;
         color: rgb(255, 255, 255);
         background-color: #5b6677;
-        min-height: calc(100vh - 65px);
-    }
-
-    .arvr-div2 { 
-        grid-area: 1 / 3 / 10 / 4; 
-        padding-top: 3px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        background-color: #5b6677;
-        min-height: calc(100vh - 65px);
-    }
-
-    .arvr-div3 { 
-        grid-area: 1 / 5 / 10 / 6; 
-        padding-top: 3px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        background-color: #5b6677;
-        min-height: calc(100vh - 65px);
+        margin-right: 4vw;
     }
 
 .computer-related-tech-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
     min-height: calc(100vh - 65px);
-    grid-auto-rows: 49vh;
-    margin: 0 20px;
+    margin: 0 2vw;
 }
     
     .computer-related-tech-grid > div { 
@@ -202,57 +211,9 @@ a:active {
     grid-row-gap: 0px;
 }
 
-    .software-div1 { 
-        grid-area: 1 / 2 / 2 / 3; 
+    .software-grid > div { 
         padding-top: 3px;
         padding-bottom: 10px;
         color: rgb(255, 255, 255);
         background-color: #5b6677;
-        min-height: calc(100vh - 65px);
-        height: 10vh;
-    }
-
-    .software-div2 { 
-        grid-area: 3 / 2 / 4 / 3; 
-        padding-top: 3px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        background-color: #5b6677;
-        min-height: calc(100vh - 65px);
-    }
-
-    .software-div3 { 
-        grid-area: 1 / 4 / 2 / 5;
-        padding-top: 3px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        background-color: #5b6677;
-        min-height: calc(100vh - 65px); 
-    }
-
-    .software-div4 { 
-        grid-area: 3 / 4 / 4 / 5; 
-        padding-top: 3px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        background-color: #5b6677;
-        min-height: calc(100vh - 65px);
-    }
-
-    .software-div5 { 
-        grid-area: 5 / 2 / 6 / 3;
-        padding-top: 3px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        background-color: #5b6677;
-        min-height: calc(100vh - 65px);
-    }
-
-    .software-div6 { 
-        grid-area: 5 / 4 / 6 / 5;
-        padding-top: 3px;
-        padding-bottom: 10px;
-        color: rgb(255, 255, 255);
-        background-color: #5b6677;
-        min-height: calc(100vh - 65px);
     }

@@ -76,7 +76,7 @@ a:active {
     background-color: #5b6677;
 }
 
-.page-overlay-h2 { /* Used for a spectial h2 on computer&tech */
+.page-overlay-h { /* Used for a spectial h2 on computer&tech */
     color: rgb(255, 255, 255);
     background-color: #5b6677;  
     margin: 0 auto;
@@ -97,8 +97,6 @@ a:active {
     max-width: 30vw;
     border-width: 5px;
     border-style: solid;
-    border-radius: 25px;
-    border-color: #393E46;
     background-color: #969494;
     margin: 1em auto;
     text-align: left;
@@ -112,21 +110,12 @@ a:active {
     font-style: italic;
     margin: 4px;
 }
-
 /* buttons */
-.index-button {
-    background-color: #5a5959;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 25px;
-    border-color: #5a5959;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+main > form {
+    padding-top: 8px;
+    color: rgb(255, 255, 255);
+    background-color: #5b6677;
 }
-
 /* Texts */
 .source-links {
     margin: 0 auto;

@@ -4,15 +4,6 @@ body { /* Customization for the backround of the document */
     background-color: #ffffffb9;
 }
 
-img { /* Customization for all images without a specific class */
-    max-width: 50vw; /* sets the max with of an image */
-    text-align: center; /* Tells the image where it's meant to be */
-    margin: 0 auto;
-    width: 30vw; /* the images width */
-    height: 20vw; /* the images height */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 h1 { /* settings for the firs header of the document */
     margin-top: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -150,9 +141,30 @@ a:active {
 }
 
 /* IMG & video */
+.img { /* Customization for all images without a specific class */
+    max-width: 50vw; /* sets the max with of an image */
+    text-align: center; /* Tells the image where it's meant to be */
+    margin: 0 auto;
+    width: 30vw; /* the images width */
+    height: 20vw; /* the images height */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-software { /* Customization for all images without a specific class */
+    max-width: 35vw; /* sets the max with of an image */
+    text-align: center; /* Tells the image where it's meant to be */
+    margin: 0 auto;
+    width: 25vw; /* the images width */
+    height: 20vw; /* the images height */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .arvr-images {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    max-width: 35vw; /* sets the max with of an image */
+    text-align: center; /* Tells the image where it's meant to be */
+    margin: 0 auto;
+    width: 25vw; /* the images width */
+    height: 20vw; /* the images height */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -205,10 +217,11 @@ a:active {
 
 .software-grid {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.09fr 1fr 0.2fr;
-    grid-template-rows: 0.5fr 0.09fr 0.5fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1vw;
+    grid-row-gap: 0.5vw;
+    min-height: calc(100vh - 65px);
+    margin: 0 5vw;
 }
 
     .software-grid > div { 

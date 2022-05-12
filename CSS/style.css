@@ -4,12 +4,9 @@ body { /* Customization for the backround of the document */
     background-color: #ffffffb9;
 }
 
-h1 { /* settings for the firs header of the document */
-    margin-top: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 32px;
-}
+/* === === === === === === === === === === */
+/* === === === Logic text stuff === === ===*/
+/* === === === === === === === === === === */
 
 p {
     font-family: 'Times New Roman', Times, serif;
@@ -23,32 +20,49 @@ p {
     text-shadow: 2px 2px 4px #000000;
 }
 
+h1 { /* settings for the firs header of the document */
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 32px;
+}
+
 b { 
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     color: white;
 }
 
-a:link { 
-    color:blue
+/* === === === === === === === === === === */
+/* === === === Logic table stuff === === ===*/
+/* === === === === === === === === === === */
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
 }
 
-a:visited {
-    color:blueviolet
+th,td{
+    width: 200px;
+    height: 50px;
 }
 
-a:focus{
-    color:crimson
-}
+td{text-align: center;}
+th{background-color:#233446;}
 
-a:hover {
-    color:red
-}
+tr:nth-child(odd){background-color:#125e51;}
+tr:nth-child(even){background-color:#233446;}
 
-a:active {
-    color:lightslategray
-}
+th:nth-child(1){text-align: left;}
+th:nth-child(2){text-align: center;}
+th:nth-child(3){text-align: right;}
 
+td:nth-child(1){text-align: left;}
+td:nth-child(2){text-align: center;}
+td:nth-child(3){text-align: right;}
+
+/* ===== ===== ==classes=== ===== ===== */
 /* ===== ===== ============ ===== ===== */
 /* ===== ===== Page Overlay ===== ===== */
 /* ===== ===== ============ ===== ===== */
@@ -77,53 +91,65 @@ a:active {
 }
 
 .page-overlay-h { /* Used for a spectial h2 on computer&tech */
-    color: rgb(255, 255, 255);
-    background-color: #5b6677;  
     margin: 0 auto;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
     max-width: 20vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
+    color: rgb(255, 255, 255);
+    background-color: #5b6677;  
 }
 
-/* ===== ===== ==================== ===== ===== */
-/* ===== ===== Lists/text & buttons ===== ===== */
-/* ===== ===== ==================== ===== ===== */
 
-/* Lists */
+/* === === === ==== === === === === === */
+/* === === ===Lists & tables=== === === */
+/* === === === ==== === === === === === */
+
+/* === === === Lists === === === */
 .my-list {
     background-position: center;
     max-width: 30vw;
     border-width: 5px;
     border-style: solid;
-    background-color: #969494;
     margin: 1em auto;
     text-align: left;
-    list-style: none;
+    list-style: none; 
+    background-color: #969494;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.list-text-customization {
+.my-list > dt {
     color:black;
     font-weight: bold;
     font-style: italic;
     margin: 4px;
 }
-/* buttons */
+
+.my-list > dd {
+    color:rgb(253, 253, 253);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ===== ===== ==================== ===== ===== */
+/* ===== ===== ===text & buttons=== ===== ===== */
+/* ===== ===== ==================== ===== ===== */
+
+/* === === === buttons === === === */
 main > form {
     padding-top: 8px;
     color: rgb(255, 255, 255);
     background-color: #5b6677;
 }
-/* Texts */
-.source-links {
+/* === === === Texts === === ===*/
+.page-overlay-footer > div > a {
     margin: 0 auto;
     text-align: center;
     min-width: 10vw;
 }
 
-.computer-related-tech-grid > header { /* Makes a "fake" header for me to use, ie a default header if for whatever rteoson I can't or shouldn't use h1, h2 ect*/
+.computer-related-tech-grid-h { /* Makes a "fake" header for me to use, ie a default header if for whatever rteoson I can't or shouldn't use h1, h2 ect*/
     text-decoration: solid;
     font-size: large;
     text-align: center;
@@ -219,3 +245,27 @@ main > form {
         color: rgb(255, 255, 255);
         background-color: #5b6677;
     }
+
+/* === === === === === === === === */
+/* === === ==Link rules=== === === */
+/* === === === === === === === === */
+
+a:link { 
+    color:blue
+}
+
+a:visited {
+    color:blueviolet
+}
+
+a:focus{
+    color:crimson
+}
+
+a:hover {
+    color:red
+}
+
+a:active {
+    color:lightslategray
+}

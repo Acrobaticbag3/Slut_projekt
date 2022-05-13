@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="page-overlay">
+        <h1>Enkät</h1>
+        <form action="LogOut.html" get>
+            <label for="fname" >First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">last name:</label><br>
+            <input type="text" id="lname" name="lname" required>   
+            <p>
+                Detta är en liten ankät där du kan fylla i lite informatiom dina tekniska kunskaper.
+                Du kan aväen ge oss lite extra information inom teknik området!
+            </p>
+            <div class="forum-grid">
+                <div>
+                    <p>What codeing languages do you know?</p>
+                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="checkbox" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="css">JavaScript</label><br>
+                    <input type="checkbox" id="C#" name="fav_language" value="C#">
+                    <label for="html">C#</label><br>
+                    <input type="checkbox" id="C++" name="fav_language" value="C++">
+                    <label for="css">C++</label><br>
+                    <input type="checkbox" id="Ruby" name="fav_language" value="Ruby">
+                    <label for="javascript">Ruby</label><br>
+                </div>
+                <div>
+                    <p>What devises do you own?</p>
+                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                    <label for="dator">Dator</label><br>
+                    <input type="checkbox" id="css" name="fav_language" value="CSS">
+                    <label for="Spelkonsoler">Spelkonsoler</label><br>
+                    <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="Mobiltelefån">Mobiltelefån</label><br>
+                    <input type="checkbox" id="C#" name="fav_language" value="C#">
+                    <label for="Laptop">Laptop</label><br>
+                    <input type="checkbox" id="C++" name="fav_language" value="C++">
+                    <label for="css"></label><br>
+                    <input type="checkbox" id="Ruby" name="fav_language" value="Ruby">
+                    <label for="javascript">Ruby</label><br>
+                </div>
+                <div>
+                    <p></p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="other" name="other" value="other">
+                    <label for="other">Other</label><br>
+                    <textarea name="other-methods" rows="10" cols="30">If you pressed other, what do you use?</textarea><br>
+                </div>
+                <div>
+                    <p></p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="other" name="other" value="other">
+                    <label for="other">Other</label><br>
+                    <textarea name="other-methods" rows="10" cols="30">If you pressed other, what do you use?</textarea><br>
+                </div>
+                <div>
+                    <p></p>
+                    <label for="Game-ganeras">Fav game ganera</label><br>
+                    <input list="Game-ganeras">
+                    <datalist id="Game-ganeras">
+                        <option value="FPS">
+                        <option value="Grand strategie">
+                        <option value="3rd pirson">
+                        <option value="Simulators">
+                    </datalist><br>
+                    <textarea name="other-methods" rows="10" cols="30">If you pressed other, what do you use?</textarea><br>
+                </div>
+                <div>
+                    <p></p>
+                    <label for="Game-ganeras">Fav game ganera</label><br>
+                    <input list="Game-ganeras">
+                    <datalist id="Game-ganeras">
+                        <option value="FPS">
+                        <option value="Grand strategie">
+                        <option value="3rd pirson">
+                        <option value="Simulators">
+                    </datalist><br>
+                    <textarea name="other-methods" rows="10" cols="30">If you pressed other, what do you use?</textarea><br>
+                </div>
+            </div>
+            <p></p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="css">JavaScript</label><br>
+                <input type="radio" id="C#" name="fav_language" value="C#">
+                <label for="html">C#</label><br>
+                <input type="radio" id="C++" name="fav_language" value="C++">
+                <label for="css">C++</label><br>
+                <input type="radio" id="Ruby" name="fav_language" value="Ruby">
+                <label for="javascript">Ruby</label><br>
+            <textarea name="Extra-info" rows="10" cols="30">Any extra info you wanna give?</textarea><br>
+            <input type="submit" value="submit"></input>
+        </form>
+    </main>
+
+</body>
+</html>

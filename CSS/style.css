@@ -49,6 +49,7 @@ table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
     margin: 0 auto;
+    border-radius: 0.5vw;
 }
 
 th,td{
@@ -162,6 +163,10 @@ main > form {
 .computer-related-tech-grid-h { /* Makes a "fake" header for me to use, ie a default header if for whatever rteoson I can't or shouldn't use h1, h2 ect*/
     text-decoration: solid;
     font-size: large;
+    text-align: center;
+}
+
+.fake-arvr-head {
     text-align: center;
 }
 

@@ -4,7 +4,7 @@
 }
 
 :root {
-    font-family: "lary", serif;
+    font-family: "lary", serif; /* make the font lary an actual font */
 }
 
 body { /* Customization for the backround of the document */
@@ -28,13 +28,15 @@ p {
     text-shadow: 2px 2px 4px #000000;
 }
 
-h1 { /* settings for the firs header of the document */
+/* settings for the firs header of the document */
+h1 { 
     margin-top: 0;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 32px;
 }
 
+/* customisations for bold texts */
 b { 
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
@@ -45,6 +47,7 @@ b {
 /* === === === Logic table stuff === === ===*/
 /* === === === === === === === === === === */
 
+/* create customizations for the table, table head and table data cell */
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -129,6 +132,7 @@ td:nth-child(3){text-align: right;}
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* makes my-list the parent of dt and gives it costumisations */
 .my-list > dt {
     color:black;
     font-weight: bold;
@@ -136,6 +140,7 @@ td:nth-child(3){text-align: right;}
     margin: 4px;
 }
 
+/* makes my-list the parent of dd and gives it costumisations */
 .my-list > dd {
     color:rgb(253, 253, 253);
     font-weight: bold;
@@ -160,12 +165,14 @@ main > form {
     min-width: 10vw;
 }
 
-.computer-related-tech-grid-h { /* Makes a "fake" header for me to use, ie a default header if for whatever rteoson I can't or shouldn't use h1, h2 ect*/
+/* Makes a "fake" header for me to use, ie a default header if for whatever rteoson I can't or shouldn't use h1, h2 ect*/
+.computer-related-tech-grid-h { 
     text-decoration: solid;
     font-size: large;
     text-align: center;
 }
 
+/* creats a "head" for me to use (only for arvr page) */
 .fake-arvr-head {
     text-align: center;
 }
@@ -217,7 +224,7 @@ main > form {
 /* ===== ===== ===== ===== ===== */
 /* ===== ===== grids ===== ===== */
 /* ===== ===== ===== ===== ===== */
-
+/* grid for the arvr page */
 .arvr-grid { 
     display: grid;
     grid-template-columns: 0.4fr 1fr 1fr;
@@ -232,6 +239,7 @@ main > form {
         margin-right: 4vw;
     }
 
+/* grid for the computer related tech page */
 .computer-related-tech-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -248,6 +256,7 @@ main > form {
         background-color: #5b6677;
     }
 
+/* a grid for the software page */
 .software-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -264,7 +273,8 @@ main > form {
         background-color: #5b6677;
     }
 
-.forum-grid {
+/* a grid for the forum */
+.form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1vw;
@@ -273,7 +283,7 @@ main > form {
     margin: 0 5vw;
 }
 
-    .forum-grid > div { 
+    .form-grid > div { 
         padding-top: 3px;
         padding-bottom: 10px;
         color: rgb(255, 255, 255);
@@ -286,22 +296,27 @@ main > form {
 /* === === ==Link rules=== === === */
 /* === === === === === === === === */
 
+/* set color of unvisited lik to blue */
 a:link { 
     color:blue
 }
 
+/* set color of visited lik to blueviolet */
 a:visited {
     color:blueviolet
 }
 
+/* set color crimson when user clicks on link */
 a:focus{
     color:crimson
 }
 
+/* set color to red when mouse hover over link */
 a:hover {
     color:red
 }
 
+/* visited links have a gets the color lightslategray */
 a:active {
     color:lightslategray
 }

@@ -12,7 +12,8 @@
     box-shadow: 0 0.21vw 0.42vw 0 rgba(0, 0, 0, 0.2), 0 0.3125vw 1.04vw 0 rgba(0, 0, 0, 0.19);
 }
 
-nav > ul{
+/* makes ul a child of nav ang gives ul a customasation */
+nav > ul{ 
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
@@ -35,7 +36,8 @@ nav li {
     text-decoration: none;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn { 
+ /* give the nad button this if mouse hover above it */
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(185, 176, 45);
     color: black;
 }

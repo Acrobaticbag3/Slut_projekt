@@ -1,79 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet"> <!-- Links to the css and allows that to be used -->
-    <title>Document</title>
+    <title>Formulär</title>
 </head>
 <body>
 
     <main class="page-overlay"> <!-- the main contents of the page -->
         <h1>Enkät</h1>
         <form action="LogOut.html" get>
-            <label for="fname" >First name:</label><br>
-            <input type="text" id="fname" name="fname" required><br>
-            <label for="lname">last name:</label><br>
-            <input type="text" id="lname" name="lname" required>   
+            <div>
+                <label for="fname" >First name:</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">last name:</label>
+                <input type="text" id="lname" name="lname" required>  
+            </div>
+            
             <p>
                 Detta är en liten ankät där du kan fylla i lite informatiom dina tekniska kunskaper.
-                Du kan aväen ge oss lite extra information inom teknik området!
+                Du kan aväen ge oss lite extra information inom teknik området! Fågorna du ska besvara
+                handlar om:
             </p>
+            <div>
+                <ol id="Forum-ol">
+                    <li>Datorer</li>
+                    <li>programmering</li>
+                    <li>AR/VR</li>
+                    <li>Övrig teknologi</li>
+                </ol>
+            </div>
+            
             <div class="form-grid">
-                <div>
+                <div id="forum-div">
                     <p>What codeing languages do you know?</p>
                     <input type="checkbox" id="html" name="fav_language" value="HTML">
                     <label for="html">HTML</label><br>
                     <input type="checkbox" id="css" name="fav_language" value="CSS">
                     <label for="css">CSS</label><br>
                     <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="css">JavaScript</label><br>
+                    <label for="css">JavaScript</label>
                     <input type="checkbox" id="C#" name="fav_language" value="C#">
                     <label for="html">C#</label><br>
                     <input type="checkbox" id="C++" name="fav_language" value="C++">
                     <label for="css">C++</label><br>
                     <input type="checkbox" id="Ruby" name="fav_language" value="Ruby">
-                    <label for="javascript">Ruby</label><br>
+                    <label for="javascript">Ruby</label>
                 </div>
-                <div>
+                <div id="forum-div">
                     <p>Vilka enheter äger du?</p>
                     <input type="checkbox" id="Dator" name="owned_devices" value="Dator">
-                    <label for="dator">Dator</label><br>
+                    <label for="dator">Dator</label>
                     <input type="checkbox" id="Spelkonsoler" name="owned_devices" value="Spelkonsoler">
-                    <label for="Spelkonsoler">Spelkonsoler</label><br>
+                    <label for="Spelkonsoler">Spelkonsoler</label>
                     <input type="checkbox" id="Mobiltelefån" name="owned_devices" value="Mobiltelefån">
-                    <label for="Mobiltelefån">Mobiltelefån</label><br>
+                    <label for="Mobiltelefån">Mobiltelefån</label>
                     <input type="checkbox" id="Laptop#" name="owned_devices" value="Laptop">
-                    <label for="Laptop">Laptop</label><br>
+                    <label for="Laptop">Laptop</label>
                     <input type="checkbox" id="Television" name="owned_devices" value="Television">
-                    <label for="Television">Television</label><br>
+                    <label for="Television">Television</label>
                     <input type="checkbox" id="Surfplatta" name="owned_devices" value="Surfplatta">
-                    <label for="javascript">Surfplatta</label><br>
+                    <label for="javascript">Surfplatta</label>
                 </div>
-                <div>
+                <div id="forum-div">
                     <p>Om du har en dator, vilka komponenter har du i den?</p>
                     <input type="checkbox" id="Component_One" name="Component_One" value="GPU">
-                    <label for="Component_One">GPU</label><br>
+                    <label for="Component_One">GPU</label>
                     <input type="checkbox" id="Component_Two" name="Component_Two" value="PCU">
-                    <label for="Component_Two">PCU</label><br>
+                    <label for="Component_Two">PCU</label>
                     <input type="checkbox" id="Component_Three" name="Component_Three" value="Processor">
-                    <label for="Component_Three">Processor</label><br>
+                    <label for="Component_Three">Processor</label>
                     <input type="checkbox" id="Component_Four" name="Component_Four" value="RAM">
-                    <label for="Component_Three">RAM</label><br>
+                    <label for="Component_Three">RAM</label>
                     <input type="checkbox" id="Component_Five" name="Component_Five" value="HDD">
-                    <label for="Component_Three">HDD</label><br>
+                    <label for="Component_Three">HDD</label>
                     <input type="checkbox" id="Component_Six" name="Component_Six" value="SSD">
-                    <label for="Component_Three">SSD</label><br>
+                    <label for="Component_Three">SSD</label>
                     <input type="checkbox" id="Component_Seven" name="Component_Seven" value="Fans">
-                    <label for="Component_Three">Fläktar</label><br>
+                    <label for="Component_Three">Fläktar</label>
                     <input type="checkbox" id="Component_Eight" name="Component_Eight" value="Water_Cooling">
-                    <label for="Component_Three">Water cooling</label><br>
-                    <textarea name="other-methods" rows="10" cols="30">Vet du specifikationerna vad dessa komponenter? (exempel: GPU = NVIDIA 3080)</textarea><br>
+                    <label for="Component_Three">Water cooling</label>
+                    <textarea name="other-methods" rows="10" cols="30">Vet du specifikationerna vad dessa komponenter? (exempel: GPU = NVIDIA 3080)</textarea>
                 </div>
-                <div>
+                <div id="forum-div">
                     <p>vad är ditt favorit språk att koda i?</p>
-                    <label for="Fav-Code" value="Fav-Code"></label><br>
+                    <label for="Fav-Code" value="Fav-Code"></label>
                     <input list="Fav-Code">
                     <datalist id="Fav-Code">
                         <option value="HTML">
@@ -88,7 +101,7 @@
                     <textarea name="Fav-Tech" rows="10" cols="30">Om du valde "annat" vilket språk är det?</textarea> 
                 </div>
             </div>
-            <textarea name="Extra-info" rows="10" cols="30">Vilken technologi gillar du bäst, och varför?</textarea><br>
+            <textarea name="Extra-info" rows="10" cols="30">Vilken technologi gillar du bäst, och varför?</textarea>
             <input type="submit" value="submit"></input>
         </form>
     </main>

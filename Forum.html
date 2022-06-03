@@ -19,11 +19,11 @@
                 <input type="text" id="lname" name="lname" required>  
             </div>
             
-            <p>
+            <legend>
                 Detta är en liten ankät där du kan fylla i lite informatiom dina tekniska kunskaper.
                 Du kan aväen ge oss lite extra information inom teknik området! Fågorna du ska besvara
                 handlar om:
-            </p>
+            </legend>
             <div>
                 <ol id="Forum-ol">
                     <li>Datorer</li>
@@ -34,23 +34,25 @@
             </div>
             
             <div class="form-grid">
-                <div id="forum-div">
-                    <p>What codeing languages do you know?</p>
-                    <input type="checkbox" id="html" name="fav_language" value="HTML">
-                    <label for="html">HTML</label><br>
-                    <input type="checkbox" id="css" name="fav_language" value="CSS">
-                    <label for="css">CSS</label><br>
-                    <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="css">JavaScript</label>
-                    <input type="checkbox" id="C#" name="fav_language" value="C#">
-                    <label for="html">C#</label><br>
-                    <input type="checkbox" id="C++" name="fav_language" value="C++">
-                    <label for="css">C++</label><br>
-                    <input type="checkbox" id="Ruby" name="fav_language" value="Ruby">
-                    <label for="javascript">Ruby</label>
+                <div id="forum">
+                    <legend>What codeing languages do you know?</legend>
+                    <div id="forum">
+                        <input type="checkbox" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="css">JavaScript</label>
+                        <input type="checkbox" id="C#" name="fav_language" value="C#">
+                        <label for="html">C#</label>
+                        <input type="checkbox" id="C++" name="fav_language" value="C++">
+                        <label for="css">C++</label>
+                        <input type="checkbox" id="Ruby" name="fav_language" value="Ruby">
+                        <label for="javascript">Ruby</label>
+                    </div>
                 </div>
-                <div id="forum-div">
-                    <p>Vilka enheter äger du?</p>
+                <div id="block">
+                    <legend>Vilka enheter äger du?</legend>
                     <input type="checkbox" id="Dator" name="owned_devices" value="Dator">
                     <label for="dator">Dator</label>
                     <input type="checkbox" id="Spelkonsoler" name="owned_devices" value="Spelkonsoler">
@@ -64,8 +66,8 @@
                     <input type="checkbox" id="Surfplatta" name="owned_devices" value="Surfplatta">
                     <label for="javascript">Surfplatta</label>
                 </div>
-                <div id="forum-div">
-                    <p>Om du har en dator, vilka komponenter har du i den?</p>
+                <div id="block">
+                    <legend>Om du har en dator, vilka komponenter har du i den?</legend>
                     <input type="checkbox" id="Component_One" name="Component_One" value="GPU">
                     <label for="Component_One">GPU</label>
                     <input type="checkbox" id="Component_Two" name="Component_Two" value="PCU">
@@ -84,8 +86,8 @@
                     <label for="Component_Three">Water cooling</label>
                     <textarea name="other-methods" rows="10" cols="30">Vet du specifikationerna vad dessa komponenter? (exempel: GPU = NVIDIA 3080)</textarea>
                 </div>
-                <div id="forum-div">
-                    <p>vad är ditt favorit språk att koda i?</p>
+                <div id="block">
+                    <legend>vad är ditt favorit språk att koda i?</legend>
                     <label for="Fav-Code" value="Fav-Code"></label>
                     <input list="Fav-Code">
                     <datalist id="Fav-Code">

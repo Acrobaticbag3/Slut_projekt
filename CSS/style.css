@@ -39,14 +39,6 @@ legend {
     text-shadow: 2px 2px 4px #000000;
 }
 
-input {
-    justify-self: right;
-}
-
-label {
-    text-align: left;
-}
-
 /* settings for the firs header of the document */
 h1 { 
     margin-top: 0;
@@ -62,6 +54,9 @@ b {
     color: white;
 }
 
+.clear {
+    clear:both;
+}
 /* === === === === === === === === === === */
 /* === === === Logic table stuff === === ===*/
 /* === === === === === === === === === === */
@@ -175,13 +170,43 @@ td:nth-child(3){text-align: right;}
     text-shadow: 2px 2px 4px #000000;
 }
 
-#forum-div{
+#forum-div {
     font-style: italic;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
+}
+
+/* helps center the links at the bottom of pages */
+footer {
+    background: #EEEEEE;
+    margin: 0 auto;
+    height: 30px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer ul {
+    margin: 0px;
+    padding:0;
+}
+
+footer li {
+    /*  float: left;  */
+    list-style-type: none;
+    line-height: 9px;
+    height: 11px;
+    border-right: 1px solid #354052;
+    padding: 0px 10px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #354052;
+    font-size: 12px;
 }
 
 /* ===== ===== ==================== ===== ===== */
